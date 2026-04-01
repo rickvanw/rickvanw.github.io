@@ -115,19 +115,24 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: February 5, 2026</p>
+        <p class="last-updated">Last updated: April 1, 2026</p>
 
-        <p>This Privacy Policy describes how Barry Counter ("we", "us", or "our") collects, uses, and discloses your information when you use our iOS application ("Barry Counter" or the "Service"). By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+        <p>This Privacy Policy describes how Barry Counter ("we", "us", or "our") collects, uses, and discloses your information when you use our mobile application ("Barry Counter" or the "Service"), available on iOS and Android. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
 
         <h2>1. Information We Collect</h2>
 
-        <h3>1.1 Information from Game Center</h3>
-        <p>Barry Counter integrates with Apple Game Center for social features. When you sign in with Game Center, we receive:</p>
+        <h3>1.1 Information from Game Services</h3>
+        <p>Barry Counter integrates with platform-specific game services for social features:</p>
         <ul>
-            <li><strong>Game Center Player ID:</strong> A unique identifier assigned by Apple</li>
-            <li><strong>Display Name:</strong> Your Game Center username</li>
-            <li><strong>Profile Photo:</strong> Your Game Center profile image (automatically synced)</li>
-            <li><strong>Friends List:</strong> Your Game Center friends who also use Barry Counter</li>
+            <li><strong>iOS:</strong> Apple Game Center</li>
+            <li><strong>Android:</strong> Google Play Games</li>
+        </ul>
+        <p>When you sign in with your platform's game service, we receive:</p>
+        <ul>
+            <li><strong>Player ID:</strong> A unique identifier assigned by the game service (Game Center Player ID on iOS, Google Play Games Player ID on Android)</li>
+            <li><strong>Display Name:</strong> Your game service username</li>
+            <li><strong>Profile Photo:</strong> Your game service profile image (automatically synced)</li>
+            <li><strong>Friends List:</strong> Your game service friends who also use Barry Counter</li>
         </ul>
 
         <h3>1.2 Usage Data</h3>
@@ -155,7 +160,7 @@
             </tr>
             <tr>
                 <td><strong>Firebase Authentication</strong></td>
-                <td>User account management linked to Game Center</td>
+                <td>User account management linked to Game Center (iOS) or Google Play Games (Android)</td>
                 <td>User ID, authentication tokens</td>
             </tr>
             <tr>
@@ -165,7 +170,7 @@
             </tr>
             <tr>
                 <td><strong>Firebase Storage</strong></td>
-                <td>Store profile images from Game Center</td>
+                <td>Store profile images from game services</td>
                 <td>Profile photos</td>
             </tr>
             <tr>
@@ -176,7 +181,7 @@
             <tr>
                 <td><strong>Firebase Analytics</strong></td>
                 <td>Understand app usage and improve the Service</td>
-                <td>User identifier (Game Center ID), usage events</td>
+                <td>User identifier (Game Center ID or Google Play Games ID), usage events</td>
             </tr>
             <tr>
                 <td><strong>Remote Config</strong></td>
@@ -187,8 +192,11 @@
 
         <p>For more information about how Google handles data, please see <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Information</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
 
-        <h3>2.2 Apple Game Center</h3>
-        <p>We use Apple Game Center for leaderboards, achievements, and social features. Apple processes this data according to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+        <h3>2.2 Apple Game Center (iOS)</h3>
+        <p>On iOS, we use Apple Game Center for leaderboards, achievements, and social features. Apple processes this data according to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+
+        <h3>2.3 Google Play Games (Android)</h3>
+        <p>On Android, we use Google Play Games for leaderboards, achievements, and social features. Google processes this data according to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
 
         <h2>3. How We Use Your Information</h2>
 
@@ -206,8 +214,8 @@
 
         <p>We do not sell your personal data. We may share your information in the following situations:</p>
         <ul>
-            <li><strong>With Other Users:</strong> Your display name, profile photo, and scores may be visible to your Game Center friends who use Barry Counter</li>
-            <li><strong>Service Providers:</strong> With Google Firebase and Apple as described above</li>
+            <li><strong>With Other Users:</strong> Your display name, profile photo, and scores may be visible to your game service friends who use Barry Counter</li>
+            <li><strong>Service Providers:</strong> With Google Firebase, Apple (iOS), and Google Play Games (Android) as described above</li>
             <li><strong>Legal Requirements:</strong> If required by law or to protect our rights</li>
             <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
         </ul>
@@ -244,7 +252,12 @@
 
         <h3>7.2 Opt-Out Options</h3>
         <ul>
-            <li><strong>Analytics:</strong> You can limit ad tracking and analytics collection in your iOS device settings under Privacy &amp; Security &gt; Tracking</li>
+            <li><strong>Analytics:</strong> You can limit ad tracking and analytics collection in your device settings:
+                <ul>
+                    <li><strong>iOS:</strong> Go to Settings &gt; Privacy &amp; Security &gt; Tracking</li>
+                    <li><strong>Android:</strong> Go to Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization</li>
+                </ul>
+            </li>
             <li><strong>Notifications:</strong> Manage notification preferences in your device settings</li>
         </ul>
 
@@ -262,7 +275,7 @@
         <p>We implement appropriate technical and organizational measures to protect your personal data, including:</p>
         <ul>
             <li>Encryption of data in transit (HTTPS/TLS)</li>
-            <li>Secure authentication through Firebase and Game Center</li>
+            <li>Secure authentication through Firebase and platform game services (Game Center on iOS, Google Play Games on Android)</li>
             <li>Access controls and authentication for backend systems</li>
         </ul>
         <p>However, no method of transmission over the Internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
